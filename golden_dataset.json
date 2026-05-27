@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is a DBMS?",
+    "answer": "A Database Management System (DBMS) is a software system designed to manage and organize data in a structured manner. It allows users to create, modify, and query a database, and manage security and access controls."
+  },
+  {
+    "question": "What are the key features of DBMS?",
+    "answer": "Key features of DBMS include data modeling, data storage and retrieval, concurrency control, data integrity and security, and backup and recovery."
+  },
+  {
+    "question": "What is the difference between RDBMS and NoSQL?",
+    "answer": "RDBMS organizes data in the form of tables with rows and columns, related through primary and foreign keys. NoSQL organizes data as key-value pairs, documents, graphs, or column-based structures, designed for large-scale high-performance scenarios."
+  },
+  {
+    "question": "What are the types of database languages in DBMS?",
+    "answer": "The four types of database languages are Data Definition Language (DDL), Data Manipulation Language (DML), Data Control Language (DCL), and Transactional Control Language (TCL)."
+  },
+  {
+    "question": "What is DDL and what commands does it include?",
+    "answer": "DDL stands for Data Definition Language. It deals with database schemas and descriptions. Commands include CREATE, ALTER, DROP, TRUNCATE, COMMENT, and RENAME."
+  },
+  {
+    "question": "What is a superkey and how is it different from a candidate key?",
+    "answer": "A superkey is any set of attributes that allows us to identify unique rows in a relation. A candidate key is a minimal subset of a superkey that can be used as a primary key. If a combination of two or more attributes is used as a primary key, it is called a composite key."
+  },
+  {
+    "question": "What is normalization and what is a partial dependency?",
+    "answer": "Normalization is the process of organizing data to reduce redundancy and improve data integrity. A partial dependency occurs when a non-prime attribute is dependent on a proper subset of a candidate key, which violates Second Normal Form (2NF)."
+  },
+  {
+    "question": "What is a tuple and what is a relation instance?",
+    "answer": "A tuple is each row in a relation. A relation instance is the set of tuples of a relation at a particular instance of time. It can change whenever there is an insertion, deletion, or update in the database."
+  },
+  {
+    "question": "What is an INNER JOIN in SQL?",
+    "answer": "An INNER JOIN returns rows where there is a match in both tables being joined. It only includes records that have matching values in both tables based on the join condition."
+  },
+  {
+    "question": "What is a LEFT JOIN?",
+    "answer": "A LEFT JOIN returns all rows from the left table and matching rows from the right table. For rows with no matching row on the right side, the result contains null. It is also known as LEFT OUTER JOIN."
+  },
+  {
+    "question": "What are ACID properties in DBMS?",
+    "answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability. Isolation means transaction results are not visible to others before the transaction is committed. Durability means once a transaction is committed, its changes are permanent."
+  },
+  {
+    "question": "What is indexing in DBMS?",
+    "answer": "Indexing is a technique to improve data retrieval speed. Attributes of indexing include access types, access time, insertion time, deletion time, and space overhead."
+  },
+  {
+    "question": "What is database recovery and what causes data loss?",
+    "answer": "Database recovery refers to techniques used to recover lost data. Data loss can be caused by system crashes, transaction errors, viruses, catastrophic failure, and incorrect command execution. Recovery techniques are heavily dependent on a special file called the system log."
+  },
+  {
+    "question": "What is a lock-based protocol in DBMS?",
+    "answer": "Lock-based concurrency control (BCC) is a protocol in DBMS used to control concurrent access to data. It uses locks to prevent conflicting transactions from accessing the same data simultaneously."
+  },
+  {
+    "question": "What is starvation in DBMS?",
+    "answer": "Starvation occurs when a transaction is unable to proceed because other transactions keep getting priority. It can leave the database in an inconsistent state, lead to data corruption, and potentially cause deadlock where none of the transactions can proceed."
+  }
+]

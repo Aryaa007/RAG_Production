@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What is a DBMS?",
+    "correct_answer": "A Database Management System (DBMS) is a software system designed to manage and organize data in a structured manner. It allows users to create, modify, and query a database, and manage security and access controls.",
+    "rag_answer": "A DBMS (Database Management System) is a software system that is designed to manage and organize data in a structured manner, allowing users to create, modify, and query a database, as well as manage security and access controls.",
+    "score": 1.0
+  },
+  {
+    "question": "What are the key features of DBMS?",
+    "correct_answer": "Key features of DBMS include data modeling, data storage and retrieval, concurrency control, data integrity and security, and backup and recovery.",
+    "rag_answer": "The key features of DBMS mentioned are:\n\uf0b7 Data modeling\n\uf0b7 Data storage and retrieval",
+    "score": 0.5
+  },
+  {
+    "question": "What is the difference between RDBMS and NoSQL?",
+    "correct_answer": "RDBMS organizes data in the form of tables with rows and columns, related through primary and foreign keys. NoSQL organizes data as key-value pairs, documents, graphs, or column-based structures, designed for large-scale high-performance scenarios.",
+    "rag_answer": "RDBMS stores data in tables with rows and columns, using primary and foreign keys to relate data. NoSQL stores data in non-relational structures, such as key-value pairs, documents, graphs, or column-based, designed for large-scale, high-performance scenarios.",
+    "score": 1.0
+  },
+  {
+    "question": "What are the types of database languages in DBMS?",
+    "correct_answer": "The four types of database languages are Data Definition Language (DDL), Data Manipulation Language (DML), Data Control Language (DCL), and Transactional Control Language (TCL).",
+    "rag_answer": "There are 4 types of database languages in DBMS: \n1. Data Definition Language (DDL)\n2. Data Manipulation Language (DML)\n3. Data Control Language (DCL)\n4. Transactional Control Language (TCL)",
+    "score": 1.0
+  },
+  {
+    "question": "What is DDL and what commands does it include?",
+    "correct_answer": "DDL stands for Data Definition Language. It deals with database schemas and descriptions. Commands include CREATE, ALTER, DROP, TRUNCATE, COMMENT, and RENAME.",
+    "rag_answer": "DDL (Data Definition Language) is used to define the database schema and create/modify the structure of database objects. It includes the following commands: \n\uf0b7 CREATE \n\uf0b7 DROP \n\uf0b7 ALTER \n\uf0b7 TRUNCATE.",
+    "score": 0.5
+  },
+  {
+    "question": "What is a superkey and how is it different from a candidate key?",
+    "correct_answer": "A superkey is any set of attributes that allows us to identify unique rows in a relation. A candidate key is a minimal subset of a superkey that can be used as a primary key. If a combination of two or more attributes is used as a primary key, it is called a composite key.",
+    "rag_answer": "A superkey is a set of one or more attributes that can uniquely identify each record within a table, and it may contain additional attributes that are not necessary for uniqueness. It is different from a candidate key in that a candidate key is a minimal set of attributes that uniquely identifies each record, whereas a superkey can have more attributes than the minimum required. In other words, a superkey can be a subset that includes a candidate key, but not all superkeys are candidate keys.",
+    "score": 1.0
+  },
+  {
+    "question": "What is normalization and what is a partial dependency?",
+    "correct_answer": "Normalization is the process of organizing data to reduce redundancy and improve data integrity. A partial dependency occurs when a non-prime attribute is dependent on a proper subset of a candidate key, which violates Second Normal Form (2NF).",
+    "rag_answer": "Normalization is the process of organizing the attributes of the database to reduce or eliminate data redundancy. A partial dependency occurs when a proper subset of a candidate key determines a non-prime attribute, meaning that an attribute is dependent on only part of the key, not the entire key.",
+    "score": 1.0
+  },
+  {
+    "question": "What is a tuple and what is a relation instance?",
+    "correct_answer": "A tuple is each row in a relation. A relation instance is the set of tuples of a relation at a particular instance of time. It can change whenever there is an insertion, deletion, or update in the database.",
+    "rag_answer": "A tuple is each row in the relation. A relation instance is the set of tuples of a relation at a particular instance of time.",
+    "score": 0.5
+  },
+  {
+    "question": "What is an INNER JOIN in SQL?",
+    "correct_answer": "An INNER JOIN returns rows where there is a match in both tables being joined. It only includes records that have matching values in both tables based on the join condition.",
+    "rag_answer": "An INNER JOIN is a SQL keyword that selects all rows from both tables where the condition is satisfied, i.e., the value of the common field is the same. It creates a result-set by combining all rows from both tables where the condition satisfies.",
+    "score": 1.0
+  },
+  {
+    "question": "What is a LEFT JOIN?",
+    "correct_answer": "A LEFT JOIN returns all rows from the left table and matching rows from the right table. For rows with no matching row on the right side, the result contains null. It is also known as LEFT OUTER JOIN.",
+    "rag_answer": "A LEFT JOIN returns all the rows of the table on the left side of the join and matching rows for the table on the right side of the join. For the rows for which there is no matching row on the right side, the result-set will contain null.",
+    "score": 1.0
+  },
+  {
+    "question": "What are ACID properties in DBMS?",
+    "correct_answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability. Isolation means transaction results are not visible to others before the transaction is committed. Durability means once a transaction is committed, its changes are permanent.",
+    "rag_answer": "ACID properties in DBMS are the four key characteristics that define the reliability and consistency of a transaction: Atomicity, Consistency, Isolation, and Durability.",
+    "score": 0.5
+  },
+  {
+    "question": "What is indexing in DBMS?",
+    "correct_answer": "Indexing is a technique to improve data retrieval speed. Attributes of indexing include access types, access time, insertion time, deletion time, and space overhead.",
+    "rag_answer": "Indexing in DBMS is the development of data structures, such as B-trees or hash tables, that provide quick access to certain data items.",
+    "score": 0.5
+  },
+  {
+    "question": "What is database recovery and what causes data loss?",
+    "correct_answer": "Database recovery refers to techniques used to recover lost data. Data loss can be caused by system crashes, transaction errors, viruses, catastrophic failure, and incorrect command execution. Recovery techniques are heavily dependent on a special file called the system log.",
+    "rag_answer": "Database recovery refers to the techniques used to recover lost data due to system crashes, transaction errors, viruses, catastrophic failure, incorrect command execution, etc. Data loss can be caused by system failures, transaction failures, human errors, security breaches, hardware upgrades, and natural disasters.",
+    "score": 0.5
+  },
+  {
+    "question": "What is a lock-based protocol in DBMS?",
+    "correct_answer": "Lock-based concurrency control (BCC) is a protocol in DBMS used to control concurrent access to data. It uses locks to prevent conflicting transactions from accessing the same data simultaneously.",
+    "rag_answer": "A lock-based protocol in DBMS is used to control the access of multiple transactions to the same data item, helping to maintain data consistency and integrity by gaining locks on data items to prevent conflicts between concurrent transactions.",
+    "score": 1.0
+  },
+  {
+    "question": "What is starvation in DBMS?",
+    "correct_answer": "Starvation occurs when a transaction is unable to proceed because other transactions keep getting priority. It can leave the database in an inconsistent state, lead to data corruption, and potentially cause deadlock where none of the transactions can proceed.",
+    "rag_answer": "Starvation in DBMS occurs when a transaction or process is not able to get the resources it needs to proceed and is continuously delayed or blocked.",
+    "score": 0.5
+  }
+]
