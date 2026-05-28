@@ -22,8 +22,6 @@ env/
 # Logs
 *.log
 
-# ChromaDB
-chroma_db/
 
 # FAISS
 *.faiss

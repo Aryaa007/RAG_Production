@@ -1,0 +1,9 @@
+d trouble, add a specific year to the input & format.
+See https://github.com/python/cpython/issues/70647.""",
+                          DeprecationWarning,
+                          skip_file_prefixes=(os.path.dirname(__file__),))
+        return format
+
+    def compile(self, format):
+        """Return a compiled re object for the format string."""
+        return re_compile(self.pattern(for
