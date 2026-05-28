@@ -7,10 +7,9 @@ from sentence_transformers import SentenceTransformer
 import chromadb
 import io
 
-# add this import at the top of api.py
+
 from fastapi.middleware.cors import CORSMiddleware
 
-# add this RIGHT AFTER app = FastAPI()
 
 embed_model   = SentenceTransformer("BAAI/bge-small-en-v1.5")
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
@@ -109,3 +108,4 @@ def ask(q: Question):
     )
     sources = list({chunk["source"] for chunk in chunks})
     return {"answer": answer_text, "sources": sources}
+

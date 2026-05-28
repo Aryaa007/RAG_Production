@@ -1,7 +1,6 @@
 from groq import Groq
 from retriever import hybrid_retrieve
 
-# ── setup ──────────────────────────────────────────────────────────────────────
 
 import os
 from dotenv import load_dotenv
@@ -14,8 +13,6 @@ client = Groq(
     api_key=GROQ_API_KEY
 )
 
-# ── build prompt ───────────────────────────────────────────────────────────────
-# This is the most important part.
 # We inject the retrieved chunks into the prompt as "context"
 # and tell the LLM to ONLY answer from that context.
 # This is what prevents hallucination.
@@ -44,7 +41,7 @@ Answer:"""
 
     return prompt
 
-# ── generate answer ────────────────────────────────────────────────────────────
+#generate an answer
 
 def answer(question, collection_name="dbms_notes"):
     chunks = hybrid_retrieve(question, collection_name)
@@ -71,8 +68,6 @@ def answer(question, collection_name="dbms_notes"):
     answer_text = response.choices[0].message.content
 
     return answer_text, chunks
-
-# ── run ────────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     print("RAG Question Answering — type 'exit' to quit\n")
